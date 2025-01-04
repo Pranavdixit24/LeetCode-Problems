@@ -39,7 +39,7 @@ public:
         if(st.empty()) return -1;
         long long top_val=st.top();
         if(top_val<mini){
-            return mini;
+            return (int)mini;
         }
         return (int)top_val;//return type int so cast to int
     }
