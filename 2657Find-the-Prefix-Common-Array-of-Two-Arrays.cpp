@@ -60,11 +60,11 @@ public:
         int count=0;
         for(int i=0;i<n;i++){
             mpp[A[i]]++;
-            if(mpp[A[i]]==2){
+            if(mpp[A[i]]==2){ //in an array element is present once since freq=2 means in other array also present
                 count++;
             }
             mpp[B[i]]++;
-            if(mpp[B[i]]==2){
+            if(mpp[B[i]]==2){ //in an array element is present once since freq=2 means in other array also present
                 count++;
             }
             result[i]=count;
