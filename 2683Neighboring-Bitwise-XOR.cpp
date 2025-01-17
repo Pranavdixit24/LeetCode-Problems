@@ -47,9 +47,9 @@ public:
 //Approach 1
 class Solution {
 public:
-    bool doesValidArrayExist(vector<int>& derived) {
-        int n=derived.size();
-        vector<int> original(n);
+    bool doesValidArrayExist(vector<int>& derived) {     //property (x^y)=z 
+        int n=derived.size();                                    //  (y^z)=x
+        vector<int> original(n);                                //   (z^x)=y
         original[0]=0;
 
         for(int i=0;i<n-1;i++){
