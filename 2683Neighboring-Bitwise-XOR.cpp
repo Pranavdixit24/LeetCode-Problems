@@ -69,3 +69,19 @@ public:
         
     }
 };
+
+//Approach 2
+class Solution {
+public:
+    bool doesValidArrayExist(vector<int>& derived) {
+        int XOR=0;
+        for(int x:derived){
+            XOR^=x;
+        }
+        return XOR==0;
+    }
+};
+// approach
+// derived = [1,1,0]
+// original={a,b,c}
+// {a^b,b^c,c^a} if we xor all  we get 0 so goes with derived it should also be 0 then true 
